@@ -14,6 +14,7 @@ typedef struct NeuralNets {
 } NeuralNetwork;
 
 void freeMatrix(Matrix m);
+void train(double* inputsArr, int inputSize, double* targetsArr, int targetsSize, NeuralNetwork nn);
 NeuralNetwork newNeuralNetwork(int inputsLength, int hiddenLength, int outputsLength);
 NeuralNetwork copyNeuralNetwork(NeuralNetwork nn);
 Matrix NNfeedingForward(double* inputsArr, int inputSize, NeuralNetwork nn);
